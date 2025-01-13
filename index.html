@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Dashboard</title>
+  <!----------Iconscout CDN-------------->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <!--------------Custom CSS------------->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar__logo">
+      <img src="images/logo.png" alt="">
+      <h3>Stan Sh<span>o</span>p</h3>
+    </a>
+    <menu class="sidebar__top">
+      <a href="" class="active">
+        <i class="uil uil-create-dashboard"></i>
+        <h5>Dashboard</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-th-large"></i>
+        <h5>Orders</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-tag-alt"></i>
+        <h5>Products</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-users-alt"></i>
+        <h5>Customers</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-chart-line"></i>
+        <h5>Analytics</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-users-alt"></i>
+        <h5>Customers</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-envelopes"></i>
+        <h5>Messages</h5>
+      </a>
+    </menu>
+
+    <menu class="sidebar__bottom">
+      <a href="">
+        <i class="uil uil-question-circle"></i>
+        <h5>Support</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-setting"></i>
+        <h5>Settings</h5>
+      </a>
+      <a href="">
+        <i class="uil uil-signout"></i>
+        <h5>Logout</h5>
+      </a>
+    </menu>
+
+  </aside>
+
+
+  <button class="sidebar__toggle-open"><i class="uil uil-bars"></i></button>
+  <button class="sidebar__toggle-close"><i class="uil uil-multiply"></i></button>
+
+
+  <main>
+    <nav class="navbar">
+      <div class="navbar__search">
+        <i class="uil uil-search"></i>
+        <input type="text" placeholder="search">
+        <i class="uil uil-microphone"></i>
+      </div>
+      <menu class="navbar__items">
+        <button class="navbar__theme-btn">
+          <i class="uil uil-moon"></i>
+        </button>
+        <button class="navbar__export-btn">
+          Export <i class="uil uil-export"></i>
+        </button>
+        <div class="navbar__items-image">
+          <img src="images/candidate1.png" alt="">
+        </div>
+      </menu>
+    </nav>
+    <section class="main__wrapper">
+      <section class="main__left">
+        <h1>Overview</h1>
+        <menu class="cards">
+          <article class="card">
+            <h5>Products Viewed<span class="success">+5.0%</span> </h5>
+            <h2>953.4K</h2>
+            <div>
+              <small>Vs. last month</small>
+              <small>477.2%</small>
+            </div>
+          </article>
+          <article class="card">
+            <h5>Add To Cart<span class="success">+11.9%</span> </h5>
+            <h2>673.8kK</h2>
+            <div>
+              <small>Vs. last month</small>
+              <small>12.6%</small>
+            </div>
+          </article>
+          <article class="card">
+            <h5>Checkouts<span class="danger">-2.4%</span> </h5>
+            <h2>499.1K</h2>
+            <div>
+              <small>Vs. last month</small>
+              <small>67.0%</small>
+            </div>
+          </article>
+          <article class="card">
+            <h5>Shares<span class="success">+7.2%</span> </h5>
+            <h2>103.1K</h2>
+            <div>
+              <small>Vs. last month</small>
+              <small>29.0%</small>
+            </div>
+          </article>
+        </menu>
+
+        <canvas id="chart"></canvas>
+
+        <section class="topProducts">
+          <h3>Top Selling Products</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Producers</th>
+                <th>Stock</th>
+                <th>Price</th>
+                <th>Sales</th>
+                <th>Earnings</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <img src="images/product1.jpg" alt="">
+                  </div>
+                  <p>Winter Jacket for Females </p>
+                </td>
+                <td>932,002</td>
+                <td>$23.99</td>
+                <td>1,838</td>
+                <td>$802,009</td>
+                <td>+11.5%</td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <img src="images/product2.jpg" alt="">
+                  </div>
+                  <p>Uniqu Winter Airism Jacket with Hoodie</p>
+                </td>
+                <td>1,294,335</td>
+                <td>$79.99</td>
+                <td>92,224</td>
+                <td>$42,035</td>
+                <td>+23.6%</td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <img src="images/product3.jpg" alt="">
+                  </div>
+                  <p>Uniqo T-Shirt Airism</p>
+                </td>
+                <td>42,243</td>
+                <td>$23.99</td>
+                <td>2,324</td>
+                <td>$842,242</td>
+                <td>+21.9%</td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <img src="images/product4.jpg" alt="">
+                  </div>
+                  <p>Glosy Horizon Winter Jack Unis</p>
+                </td>
+                <td>285,243</td>
+                <td>$99.99</td>
+                <td>290,324</td>
+                <td>$802,009</td>
+                <td>+73.9%</td>
+              </tr>
+            </tbody>
+          </table>
+          <small>See More...</small>
+        </section>
+
+      </section>
+      <section class="main__right">
+        <article class="topCategories">
+          <header>
+            <h4>Top topCategories</h4>
+          <i class="uil uil-ellipsis-h"></i>
+          </header>
+          <canvas id="categories"></canvas>
+          <ul>
+              <li>
+                <div>
+                  <span></span>
+                  <h5>Fashion</h5>
+                </div>
+                <h6>80.4%</h6>
+              </li>
+              <li>
+                <div>
+                  <span></span>
+                  <h5>Food</h5>
+                </div>
+                <h6>73.0%</h6>
+              </li>
+              <li>
+                <div>
+                  <span></span>
+                  <h5>Electronics</h5>
+                </div>
+                <h6>55.4%</h6>
+              </li>
+              <li>
+                <div>
+                  <span></span>
+                  <h5>Other</h5>
+                </div>
+                <h6>47.0%</h6>
+              </li>
+            </ul>
+            <button>View Details <i class="uil uil-external-link-alt"></i></button>
+        </article>
+        <article class="nextEvents">
+          <header>
+            <h4>Upcoming Events</h4>
+            <i class="uil uil-ellipsis-h"></i>
+          </header>
+          <div class="nextEvents__image">
+            <img src="images/events.png" alt="">
+          </div>
+          <ul>
+            <li>
+              <div class="event__image">
+                <img src="images/event1.jpg" alt="">
+              </div>
+              <div>
+                <h5>Christmas Holiday Sales</h5>
+                <small>20 - 25 December, 2025</small>
+              </div>
+            </li>
+            <li>
+              <div class="event__image">
+                <img src="images/event2.jpg" alt="">
+              </div>
+              <div>
+                <h5>End of Year Sales</h5>
+                <small>26 - 31 December, 2025</small>
+              </div>
+            </li>
+            <li>
+              <div class="event__image">
+                <img src="images/event3.jpg" alt="">
+              </div>
+              <div>
+                <h5>New Year Sales</h5>
+                <small>1st - 5th January, 2026</small>
+              </div>
+            </li>
+          </ul>
+          <button>View Event Calendar <i class="uil uil-external-link-alt"></i></button>
+        </article>
+      </section>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
